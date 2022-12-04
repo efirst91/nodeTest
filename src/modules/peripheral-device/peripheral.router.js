@@ -8,5 +8,9 @@ const router = Router()
 
 router
     .get('/', PeripheralController.getAllPeripheral)
+    .get('/:id', PeripheralController.getPeripheralById)
+    .post('/', PeripheralController.savePeripheral)
+    .put('/:id', PeripheralController.updatePeripheral)
+    .delete('/:id', PeripheralController.deletePeripheralById)
 
 module.exports.PeripheralRouter = router;
